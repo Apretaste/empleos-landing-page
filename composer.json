@@ -1,0 +1,11 @@
+{
+	"autoload": {
+		"psr-4": {
+			"Apretaste\\": "classes/Apretaste/",
+			"Framework\\": "classes/Framework/"
+		}
+	},
+	"require": {
+		"nette/mail": "^2.4"
+	}
+}

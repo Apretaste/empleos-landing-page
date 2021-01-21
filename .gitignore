@@ -1,0 +1,8 @@
+classes
+configs/config.ini
+composer.lock
+tmp/
+logs/
+shared/
+vendor/
+.idea/
