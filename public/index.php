@@ -19,8 +19,9 @@ $action = isset($_GET['a']) ? strtolower($_GET['a']) : "main";
 $error = isset($_GET['error']) ? strtolower($_GET['error']) : false;
 
 // get global
+define('HTTP_BASE_PATH', $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST']);
+define('HTTP_FULL_PATH', HTTP_BASE_PATH . $_SERVER['REQUEST_URI']);
 define('BASE_PATH', dirname(__DIR__) . DIRECTORY_SEPARATOR);
-define('HTTP_PATH', 'https://app.apretaste.org/');
 define('APP_PATH', BASE_PATH . 'app/');
 define('TEMP_PATH', BASE_PATH . 'tmp/');
 

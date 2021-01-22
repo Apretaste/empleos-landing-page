@@ -6,14 +6,18 @@ class Controller
 {
 	public function main()
 	{
-		// get anuncios
+		// create supporting SQL
 		$kind = empty($_SESSION['type']) ? '' : "AND kind = '{$_SESSION['type']}'";
 		$category = empty($_SESSION['category']) ? '' : "AND category = '{$_SESSION['category']}'";
+		$flags = empty($_SESSION['flags']) ? '' : "AND id NOT IN ({$_SESSION['flags']})";
+
+		// get anuncios
 		$posts = Database::query("
 			SELECT id, title, category, kind, inserted 
 			FROM _empleos_offers
-			WHERE inserted BETWEEN '{$_SESSION['date_from']} 00:00:00' AND '{$_SESSION['date_to']} 23:59:59'
-			$category $kind
+			WHERE flags < 10
+			AND inserted BETWEEN '{$_SESSION['date_from']} 00:00:00' AND '{$_SESSION['date_to']} 23:59:59'
+			$category $kind $flags
 			ORDER BY inserted DESC
 			LIMIT 100");
 
@@ -60,5 +64,20 @@ class Controller
 		$this->view->data->title = "Anuncio";
 		$this->view->data->post = $post;
 		$this->view->setLayout('main');
+	}
+
+	public function flag()
+	{
+		// get data from the view
+		$id = $this->request->get('id');
+
+		// add the flag to your session
+		$_SESSION['flags'] = trim("{$_SESSION['flags']},'$id'", ',');
+
+		// save the flag
+		Database::query("UPDATE _empleos_offers SET flags = flags + 1 WHERE id = '$id'");
+
+		// redirect to the posts
+		header("Location: /posts?error=post_flagged");
 	}
 }

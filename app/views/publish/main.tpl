@@ -40,9 +40,16 @@
 				</select>
 			</div>
 
+			<!-- recaptcha -->
+			<div class="form-group">
+				<div class="g-recaptcha" data-sitekey="<?= $captchaKey ?>"></div>
+			</div>
+
 			<!-- BUTTONS -->
 			<a href="/posts" class="btn btn-light">← Atrás</a>
 			<button class="btn btn-dark btn-loading" type="submit">Publicar</button>
 		</form>
 	</div>
 </div>
+
+<script src="https://www.google.com/recaptcha/api.js?hl=es" async defer></script>

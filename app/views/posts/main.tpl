@@ -46,6 +46,7 @@
 					</div>
 					<p class="card-text"><?= $item->title ?></p>
 					<a href="/posts/open?id=<?= $item->id ?>" class="card-link">Revisar</a>
+					<a href="/posts/flag?id=<?= $item->id ?>" onclick="return confirm('¿Está seguro que quiere enviar este anuncio a revisión? Reporte solo SPAM o anuncios falsos o engañosos.')" class="card-link float-right font-weight-light small text-dark"><i class="fas fa-flag"></i> Reportar</a>
 				</div>
 			</div>
 		<?php } ?>

@@ -5,18 +5,37 @@
 	<?php include BASE_PATH . 'configs/analytics.php'; ?>
 
 	<!-- meta -->
-	<title>Empleos | <?= $title ?></title>
+	<title>Empleos Apretaste | <?= $title ?></title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="">
-	<meta name="author" content="">
+	<meta name="description" content="En Empleos Apretaste damos visibilidad a miles de cubanos que han colgado su perfil profesional en nuestra app. Si buscas un freelancer, o necesitas un empleado en Cuba, aquí lo puedes encontrar.">
+	<meta name="author" content="salvi@apretaste.org">
 
 	<!-- favicon -->
 	<link rel="icon" type="image/x-icon" href="/favicon.ico">
-	<link rel="icon" type="image/png" sizes="16x16" href="/branding/apretaste_icon_16x16.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/branding/apretaste_icon_32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="/branding/apretaste_icon_64x64.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/branding/apretaste_icon_16x16.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/branding/apretaste_icon_32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/assets/img/branding/apretaste_icon_64x64.png">
+
+	<!-- twitter card data -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@apretaste">
+	<meta name="twitter:title" content="Empleos Apretaste: La red de empleos de Cuba">
+	<meta name="twitter:description" content="En Empleos Apretaste damos visibilidad a miles de cubanos que han colgado su perfil profesional en nuestra app. Si buscas un freelancer, o necesitas un empleado en Cuba, aquí lo puedes encontrar.">
+	<meta name="twitter:creator" content="@apretaste">
+	<meta name="twitter:image" content="<?= HTTP_BASE_PATH ?>/assets/img/feature.png">
+
+	<!-- open graph data -->
+	<meta property="fb:app_id" content="285099284865702"/>
+	<meta property="og:url" content="<?= HTTP_FULL_PATH ?>"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:locale" content="es_ES"/>
+	<meta property="og:site_name" content="Empleos Apretaste"/>
+	<meta property="og:title" content="La red de empleos de Cuba"/>
+	<meta property="og:description" content="En Empleos Apretaste damos visibilidad a miles de cubanos que han colgado su perfil profesional en nuestra app. Si buscas un freelancer, o necesitas un empleado en Cuba, aquí lo puedes encontrar."/>
+	<meta property="og:image" content="<?= HTTP_BASE_PATH ?>/assets/img/feature.png"/>
+	<meta property="og:image:alt" content="Empleos Apretaste: La red de empleos de Cuba"/>
 
 	<!-- fonts -->
 	<link href="/assets/libs/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -38,8 +57,8 @@
 			<!-- User -->
 			<li class="nav-item mt-3 mb-1">
 				<a class="nav-link" href="/posts">
-					<img src="/branding/apretaste_icon_64x64.png" class="w-100 d-sm-none" alt="Apretaste Empleos">
-					<img src="/branding/apretaste_logo_250x90.png" class="w-75 d-none d-sm-block" alt="Apretaste Empleos">
+					<img src="/assets/img/branding/apretaste_icon_64x64.png" class="w-100 d-sm-none" alt="Empleos Apretaste">
+					<img src="/assets/img/branding/apretaste_logo_250x90.png" class="w-75 d-none d-sm-block" alt="Empleos Apretaste">
 				</a>
 			</li>
 
@@ -66,6 +85,14 @@
 					<span>Personal</span>
 				</a>
 			</li>
+
+			<!-- about -->
+			<li class="nav-item <?php if($this->router->controller == 'about') echo 'active'; ?>">
+				<a class="nav-link" href="/about">
+					<i class="fas fa-fw fa-info-circle"></i>
+					<span>Acerca de</span>
+				</a>
+			</li>
 		</ul>
 
 		<!-- Content Wrapper -->
@@ -73,7 +100,7 @@
 			<!-- Main Content -->
 			<div id="content">
 				<!-- Page Content -->
-				<div class="container-fluid">
+				<div class="container-fluid pb-4">
 					<div class="row mt-4">
 						<div class="d-12 col-12 text-center text-md-left mb-4">
 							<h1 class="h3 mb-0 text-gray-800">

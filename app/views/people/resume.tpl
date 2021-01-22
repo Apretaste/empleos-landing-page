@@ -10,7 +10,7 @@
 						<i class="fas fa-male fa-stack-1x fa-inverse"></i>
 					</span>
 					<p class="my-0 pl-5"><?= $person->name ?></p>
-					<p class="font-weight-lighter text-black-50 my-0 pl-5">Nombre</p>
+					<p class="font-weight-light small text-black-50 my-0 pl-5">Nombre</p>
 				</li>
 			<?php } ?>
 
@@ -22,7 +22,7 @@
 						<i class="fas fa-envelope-open-text fa-stack-1x fa-inverse"></i>
 					</span>
 					<p class="my-0 pl-5"><?= $person->email ?></p>
-					<p class="font-weight-lighter text-black-50 my-0 pl-5">Correo electrónico</p>
+					<p class="font-weight-light small text-black-50 my-0 pl-5">Correo electrónico</p>
 				</li>
 			<?php } ?>
 
@@ -34,7 +34,7 @@
 						<i class="fas fa-phone fa-stack-1x fa-inverse"></i>
 					</span>
 					<p class="my-0 pl-5"><?= $person->phone ?></p>
-					<p class="font-weight-lighter text-black-50 my-0 pl-5">Teléfono</p>
+					<p class="font-weight-light small text-black-50 my-0 pl-5">Teléfono</p>
 				</li>
 			<?php } ?>
 
@@ -46,7 +46,7 @@
 						<i class="fas fa-tags fa-stack-1x fa-inverse"></i>
 					</span>
 					<p class="my-0 pl-5"><?= implode(', ', $person->profession) ?></p>
-					<p class="font-weight-lighter text-black-50 my-0 pl-5">Profesión</p>
+					<p class="font-weight-light small text-black-50 my-0 pl-5">Profesión</p>
 				</li>
 			<?php } ?>
 
@@ -58,7 +58,7 @@
 						<i class="fas fa-address-card fa-stack-1x fa-inverse"></i>
 					</span>
 					<p class="my-0 pl-5"><?= $person->bio ?></p>
-					<p class="font-weight-lighter text-black-50 my-0 pl-5">Biografía</p>
+					<p class="font-weight-light small text-black-50 my-0 pl-5">Biografía</p>
 				</li>
 			<?php } ?>
 
@@ -70,7 +70,7 @@
 						<i class="fas fa-graduation-cap fa-stack-1x fa-inverse"></i>
 					</span>
 					<p class="my-0 pl-5"><?= $item->grad_year ?>: <?= $item->school ?></p>
-					<p class="font-weight-lighter text-black-50 my-0 pl-5"><?= $item->degree ?></p>
+					<p class="font-weight-light small text-black-50 my-0 pl-5"><?= $item->degree ?></p>
 				</li>
 			<?php } ?>
 
@@ -82,7 +82,7 @@
 						<i class="fas fa-briefcase fa-stack-1x fa-inverse"></i>
 					</span>
 					<p class="my-0 pl-5"><?= $item->workplace ?></p>
-					<p class="font-weight-lighter text-black-50 my-0 pl-5"><?= $item->position ?></p>
+					<p class="font-weight-light small text-black-50 my-0 pl-5"><?= $item->position ?></p>
 				</li>
 			<?php } ?>
 
@@ -94,7 +94,7 @@
 						<i class="fas fa-brain fa-stack-1x fa-inverse"></i>
 					</span>
 					<p class="my-0 pl-5"><?= implode(', ', $person->skills) ?></p>
-					<p class="font-weight-lighter text-black-50 my-0 pl-5">Habilidades</p>
+					<p class="font-weight-light small text-black-50 my-0 pl-5">Habilidades</p>
 				</li>
 			<?php } ?>
 		</ul>

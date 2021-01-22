@@ -6,6 +6,5 @@
 		}
 	},
 	"require": {
-		"nette/mail": "^2.4"
 	}
 }

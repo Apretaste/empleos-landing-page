@@ -9,13 +9,6 @@ guest_id=1
 support_email=ayuda@apretaste.org
 tier=development
 
-[amazon]
-access=
+[recaptcha]
+public=
 secret=
-
-[mailers]
-key=
-
-[telegram]
-log_channel=
-bot_token=
