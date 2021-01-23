@@ -46,6 +46,7 @@ if(empty($_SESSION)) {
 	$_SESSION['date_to'] = date('Y-m-d');
 	$_SESSION['category'] = "";
 	$_SESSION['type'] = "";
+	$_SESSION['flags'] = "";
 }
 
 // get the global list of categories
