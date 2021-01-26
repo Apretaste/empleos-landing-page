@@ -28,9 +28,9 @@ switch ($this->error)
 <!-- display the error message -->
 <div class="row">
 	<div class="col-12">
-		<div class="alert alert-danger py-1 px-3" role="alert">
+		<div class="alert alert-danger py-1 px-2 small" role="alert">
 			<i class="fa fa-exclamation-triangle mt-1 float-left" aria-hidden="true"></i>
-			<span class="pl-3 d-flex"><?= $message ?></span>
+			<span class="pl-2 d-flex"><?= $message ?></span>
 		</div>
 	</div>
 </div>

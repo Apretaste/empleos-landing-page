@@ -1,6 +1,6 @@
 <div class="row">
 	<div class="col-12">
-		<img src="/assets/img/branding/apretaste_logo_250x90.png" alt="Apretaste Empleos">
+		<img src="/assets/img/apretaste_logo.png" alt="Apretaste Empleos">
 
 		<p>Apretaste es la red de amistad más divertida, libre, asequible y segura; hecha con ❤ para todos los cubanos.</p>
 

@@ -14,9 +14,9 @@
 
 	<!-- favicon -->
 	<link rel="icon" type="image/x-icon" href="/favicon.ico">
-	<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/branding/apretaste_icon_16x16.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/branding/apretaste_icon_32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="/assets/img/branding/apretaste_icon_64x64.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/branding/icon_16x16.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/branding/icon_32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/assets/img/branding/icon_64x64.png">
 
 	<!-- twitter card data -->
 	<meta name="twitter:card" content="summary">
@@ -24,7 +24,7 @@
 	<meta name="twitter:title" content="Empleos Apretaste: La red de empleos de Cuba">
 	<meta name="twitter:description" content="En Empleos Apretaste damos visibilidad a miles de cubanos que han colgado su perfil profesional en nuestra app. Si buscas un freelancer, o necesitas un empleado en Cuba, aquí lo puedes encontrar.">
 	<meta name="twitter:creator" content="@apretaste">
-	<meta name="twitter:image" content="<?= HTTP_BASE_PATH ?>/assets/img/feature.png">
+	<meta name="twitter:image" content="<?= HTTP_BASE_PATH ?>/assets/img/feature.jpg">
 
 	<!-- open graph data -->
 	<meta property="fb:app_id" content="285099284865702"/>
@@ -34,7 +34,7 @@
 	<meta property="og:site_name" content="Empleos Apretaste"/>
 	<meta property="og:title" content="La red de empleos de Cuba"/>
 	<meta property="og:description" content="En Empleos Apretaste damos visibilidad a miles de cubanos que han colgado su perfil profesional en nuestra app. Si buscas un freelancer, o necesitas un empleado en Cuba, aquí lo puedes encontrar."/>
-	<meta property="og:image" content="<?= HTTP_BASE_PATH ?>/assets/img/feature.png"/>
+	<meta property="og:image" content="<?= HTTP_BASE_PATH ?>/assets/img/feature.jpg"/>
 	<meta property="og:image:alt" content="Empleos Apretaste: La red de empleos de Cuba"/>
 
 	<!-- fonts -->
@@ -57,8 +57,8 @@
 			<!-- User -->
 			<li class="nav-item mt-3 mb-1">
 				<a class="nav-link" href="/posts">
-					<img src="/assets/img/branding/apretaste_icon_64x64.png" class="w-100 d-sm-none" alt="Empleos Apretaste">
-					<img src="/assets/img/branding/apretaste_logo_250x90.png" class="w-75 d-none d-sm-block" alt="Empleos Apretaste">
+					<img src="/assets/img/branding/icon_64x64.png" class="w-100 d-sm-none" alt="Empleos Apretaste">
+					<img src="/assets/img/branding/logo.png" class="w-75 d-none d-sm-block" alt="Empleos Apretaste">
 				</a>
 			</li>
 
